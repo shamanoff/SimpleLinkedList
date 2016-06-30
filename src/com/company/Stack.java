@@ -1,3 +1,4 @@
+/*
 package com.company;
 
 public class Stack {
@@ -24,3 +25,4 @@ public class Stack {
 }
 
 //вставку и стек сделать (пономеру)
+*/

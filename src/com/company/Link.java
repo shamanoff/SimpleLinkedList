@@ -9,7 +9,7 @@ public class Link {
     int index;
     char dData;              //data
 
-    Link next;
+    Phone next;
 
     public Link(char dData, int index) {
         this.index=index;

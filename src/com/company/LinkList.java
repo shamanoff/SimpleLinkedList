@@ -1,11 +1,14 @@
+/*
 package com.company;
 
+*/
 /**
  * Created by Arthur on 21.06.2016.
- */
+ *//*
+
 public class LinkList {
-   private Link first;
-   private Link last;
+   private Phone first;
+   private Phone last;
     private static int sIndex=0;
 
     public LinkList() {
@@ -15,7 +18,7 @@ public class LinkList {
 
 
     public void insertFirst(char dData){
-        Link newLink = new Link(dData,sIndex);
+        Phone newLink = new Link(dData,sIndex);
         sIndex++;
         if (isEmpty()){
             newLink.next=null;
@@ -29,7 +32,7 @@ public class LinkList {
     }
 
     public void insertLast(char dData){
-        Link newLink = new Link(dData,sIndex);
+        Phone newLink = new Link(dData,sIndex);
         sIndex++;
         if (isEmpty()){
             newLink.next=null;
@@ -45,31 +48,31 @@ public class LinkList {
     }
 
 
-    public Link delFirst(){
+    public Phone delFirst(){
         if (first!=null)
             sIndex--;
-        Link temp = first;
+        Phone temp = first;
         first=first.next;
         return temp;
     }
 
-    public Link delLast(){
-        Link temp = last;
+    public Phone delLast(){
+        Phone temp = last;
         last=last.next;
         return temp;
 
     }
 
     public void displayList(){
-        Link curent = first;
+        Phone curent = first;
         while (curent!=null){
             curent.displayLink();
             curent=curent.next;
         }
 
     }
-    public Link find(int dData){
-        Link curent = first;
+    public Phone find(int dData){
+        Phone curent = first;
         while (curent.dData!=dData){
             if (curent.next==null){
                 return null;
@@ -82,9 +85,9 @@ public class LinkList {
 
     }
 
-    public Link delByData(int dData){
-        Link curent = first;
-        Link prev = null;
+    public Phone delByData(int dData){
+        Phone curent = first;
+        Phone prev = null;
         while (curent.dData!= dData){
             if(curent.next == null){
                 return null;
@@ -104,10 +107,10 @@ public class LinkList {
     }
 
     public void insertByNum(char insertChar, int num) {
-        Link link = new Link(insertChar, sIndex);
+        Phone link = new Link(insertChar, sIndex);
         sIndex++;
-        Link curent = first;
-        Link prev = null;
+        Phone curent = first;
+        Phone prev = null;
 
         while (curent.index != num && curent != null ) {
             prev = curent;
@@ -141,3 +144,4 @@ public class LinkList {
         return (first==null);
     }
 }
+*/
